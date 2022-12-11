@@ -1,0 +1,263 @@
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 688px 25px 360px;
+  border-bottom: 1px solid #5D5D5F;
+}
+
+.header__logo {
+  width: 113px;
+  height: 39px;
+  margin-right: 244px;
+}
+
+.header__menu {
+  display: flex;
+  gap: 115px;
+}
+
+.header__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #030305;
+}
+
+.main {
+  background-image: url("../assets/images/background.jpg");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  min-height: 705px;
+  box-sizing: border-box;
+  padding: 105px 705px 154px 360px;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.main__title {
+  font-size: 78px;
+  line-height: 110%;
+  color: #030305;
+}
+
+.main__text {
+  font-size: 16px;
+  line-height: 130%;
+  color: #030305;
+}
+
+.main__button {
+  background: #030305;
+  color: white;
+  width: 334px;
+  padding: 23px 50px;
+  text-transform: uppercase;
+}
+
+.main__button:hover {
+  cursor: pointer;
+  opacity: .9;
+}
+
+.car {
+  padding: 100px 360px ;
+}
+
+.car__title {
+  font-size: 60px;
+  line-height: 70px;
+  padding-bottom: 40px;
+}
+
+.car__toggle {
+  display: flex;
+  width: 194px;
+  border: 1px solid gray;
+  margin: 20px 0;
+}
+
+.car__toggle div {
+  padding: 20px;
+  background: white;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: black;
+  transition: background-color .5s;
+  cursor: pointer;
+}
+
+.car__toggle div.active {
+  background: #030305;
+  color: #FFFFFF;
+}
+
+.car .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.car__table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px 24px;
+  list-style: none;
+}
+
+.car__cell {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.car__image {
+  transition: all .3s;
+}
+
+.car__image:hover {
+  transform: scale(1.1);
+}
+
+.car__name {
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #030305;
+}
+
+.car__container {
+  display: flex;
+  gap: 15px;
+}
+
+.car__item {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  width: 110px;
+  align-items: center;
+}
+
+.car__tech {
+  width: 34px;
+  height: 34px;
+}
+
+.car__text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  color: #030305;
+}
+
+.car__span {
+  font-weight: 700;
+}
+
+.car__button {
+  padding: 15px 122px;
+  background-color: #030305;
+  color: white;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  width: 384px;
+}
+
+.car__button:hover {
+  cursor: pointer;
+  opacity: .9;
+}
+
+.price {
+  padding:0 190px 0 360px;
+  min-height: 596px;
+  position: relative;
+}
+
+.price__title {
+  font-size: 60px;
+  line-height: 70px;
+  color: #030305;
+  padding-bottom: 20px;
+}
+
+.price__text {
+  font-size: 16px;
+  line-height: 130%;
+  color: #5D5D5F;
+  padding-bottom: 60px;
+}
+
+.price__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 344px;
+}
+
+.price__input {
+  padding: 22px 0 22px 18px;
+  font-size: 16px;
+  line-height: 130%;
+  color: #5D5D5F;
+  border: 1px solid #5D5D5F;
+}
+
+.price__input.ng-touched.ng-valid {
+  border: 1px solid #5D5D5F;
+}
+
+.price__input.ng-touched.ng-invalid {
+  border: 1px solid red;
+}
+
+.price__button {
+  padding: 20px 116px;
+  background-color: #030305;
+  color: white;
+  text-transform: uppercase;
+}
+
+.price__button:hover:not(:disabled) {
+  cursor: pointer;
+  opacity: .9;
+}
+
+.price__button:disabled {
+  cursor: not-allowed;
+  color: grey;
+  background-color: #343434;
+}
+
+.price__car {
+  position: absolute;
+  right: 190px;
+  bottom: 0;
+  z-index: -1;
+}
+
+.footer {
+  height: 90px;
+  padding: 0 360px;
+  display: flex;
+  align-items: center;
+  gap: 933px;
+  border-top: 1px solid #5D5D5F;
+}
